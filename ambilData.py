@@ -1,7 +1,7 @@
 import cv2
 import numpy
 
-dataset = 'dataset'
+dataset = 'dataSet'
 
 cam = cv2.VideoCapture(0)
 cam.set(3, 648) #Ubah Lebar Camera
