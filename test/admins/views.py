@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from .models import Member
 
 # Create your views here.
 
@@ -12,7 +13,13 @@ def attendance(request):
 
 
 def user(request):
-    return render(request, 'user.html')
+    admins_members = Member.objects.all()
+    return render(request, 'user.html', {'admins_members': admins_members})
+
+def insert(request):
+    member = Member(firstname=request.POST['firstname'], lastname=request.POST['lastname'], address=request.POST['address'])
+    member.save()
+    return redirect('/')
 
 def sudahabsen(request):
     return render(request, 'sudahabsen.html')
