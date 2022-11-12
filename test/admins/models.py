@@ -28,6 +28,4 @@ from django.db import models
 # table|albums|albums|2|CREATE TABLE albums
 #              (title text, artist text, release_date text, 
 #               publisher text, media_type text)
-# sqlite&gt; 
-
-
+# sqlite&gt;
