@@ -28,4 +28,4 @@ def tidakabsen(request):
     return render(request, 'tidakabsen.html')
 
 def screen(request):
-    return render(request, 'attendscreen.html')
+    return render(request, 'attendancescreen.html')
