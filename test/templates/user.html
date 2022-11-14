@@ -107,7 +107,7 @@
                             <p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#addnewmember" style="width:300px;">
-                                    Add New
+                                    Tambah User
                                 </button>
                             </p>
                             <!-- Modal -->
@@ -116,7 +116,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Add New</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Tambah User</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -124,16 +124,31 @@
                                             <form method="POST">
                                                 {% csrf_token %}
                                                 <div class="mb-3">
-                                                    <label>Firstname</label>
-                                                    <input type="text" id="firstname" class="form-control" />
+                                                    <label>Nim</label>
+                                                    <input type="text" id="Nim" class="form-control" />
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label>Lastname</label>
-                                                    <input type="text" id="lastname" class="form-control" />
+                                                    <label>Nama</label>
+                                                    <input type="text" id="Nama" class="form-control" />
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label>Address</label>
-                                                    <input type="text" id="address" class="form-control" />
+                                                    <label>Kelas</label>
+                                                    <input type="text" id="Kelas" class="form-control" />
+                                                </div> <div class="mb-3">
+                                                    <label>Semeste</label>
+                                                    <input type="text" id="Semester" class="form-control" />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label>Telepon</label>
+                                                    <input type="text" id="Telepon" class="form-control" />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label>Alamat</label>
+                                                    <input type="text" id="Alamat" class="form-control" />
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label>Jenis Kelamin</label>
+                                                    <input type="text" id="Jenis Kelamin" class="form-control" />
                                                 </div>
 
                                         </div>
