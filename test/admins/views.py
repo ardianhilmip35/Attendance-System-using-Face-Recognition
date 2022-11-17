@@ -16,6 +16,10 @@ def user(request):
     admins_members = Member.objects.all()
     return render(request, 'user.html', {'admins_members': admins_members})
 
+def dosen(request):
+    admins_members = Member.objects.all()
+    return render(request, 'dosen.html', {'admins_members': admins_members})
+
 def insert(request):
     member = Member(firstname=request.POST['firstname'], lastname=request.POST['lastname'], address=request.POST['address'])
     member.save()
